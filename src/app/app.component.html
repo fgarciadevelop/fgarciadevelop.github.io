@@ -1,5 +1,5 @@
 <div class="container-app col-12 d-flex flex-column">
-  <div class="header" style="height: 103px; background-color: rgba(13, 13, 13, 0.85) !important;">
+  <div class="header">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgba(13, 13, 13, 0.85) !important;">
       <div class="container-fluid container">
         <a class="navbar-brand fs-1" href="#">Fgarciadevelop</a>
@@ -9,16 +9,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse" style="flex-grow: unset !important;" [ngClass]="collapse ? '' : 'd-flex justify-content-end'">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item mx-3">
-              <a class="nav-link active fs-4" href="#">Sobre mi</a>
+              <a class="nav-link active fs-4" href="#about">Sobre mi</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link active fs-4" href="#">Skills</a>
+              <a class="nav-link active fs-4" href="#skills">Skills</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link active fs-4" href="#">Proyectos</a>
+              <a class="nav-link active fs-4" href="#projects">Proyectos</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link active fs-4" href="#">Contactos</a>
+              <a class="nav-link active fs-4" href="#contact">Contactos</a>
             </li>
           </ul>
         </div>
@@ -28,31 +28,36 @@
 
   <div class="col-12 d-flex flex-column content">
     
-    <section>
-      Principal
+    <section id="main" class="d-flex flex-column align-items-center justify-content-center">
+      <img src="../assets/fondo.webp" alt="">
+      <div class="fragmento">
+        <h1 class="title fs-1 fw-bold text-center">Francisco García</h1>
+        <p class="fs-4 text-center">Software Engineer</p>
+      </div>
     </section>
-    <section class="container d-flex flex-column align-items-center justify-content-center">
+    <section id="about" class="container d-flex flex-column align-items-center justify-content-center">
       <div class="fragmento my-5">
         <div class="title fs-1 fw-bold text-center my-5">¿Quién soy?</div>
-        <p class="fs-4 my-5">Desarrollador Front End con capacidad de realizar proyectos reales en el entorno de React, NodeJS y Express, teniendo siempre en mente que sean escalables y modulares, para así poder lograr proyectos de calidad.</p>
+        <p class="fs-4 my-5 text-center">{{about.who}}</p>
       </div>
       <div class="fragmento my-5">
         <div class="title fs-1 fw-bold text-center my-5">¿Por qué yo?</div>
-        <p class="fs-4 my-5">Soy un desarrollador con solidos conocimientos técnicos y 1 año de experiencia además de ser autodidacta que le gusta seguir aprendiendo de los demás y también me gusta compartir mis conocimientos e interactuar con la comunidad.</p>
+        <p class="fs-4 my-5 text-center">{{about.why}}</p>
       </div>
       <div class="buttons col-12 d-flex flex-row justify-content-around">
         <button class="btn-1">Descargar CV</button>
         <button class="btn-2">Contáctame</button>
       </div>
     </section>
-    <section>
+    <section id="skills">
       Skills
     </section>
-    <section>
+    <section id="projects">
       Proyectos
     </section>
-    <section>
+    <section id="contact">
       Contactos
+      <span class="material-icons">whatsapp</span>
     </section>
     
   </div>
