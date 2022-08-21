@@ -12,7 +12,17 @@ html {
     section{
         min-height: 100vh;
         font-family: $font-family-text;
-        img{
+        i {
+            color: white;
+            font-size: 100px;
+            cursor: pointer;
+            padding: 20px;
+        }
+        i:hover{
+            border: 3px solid $text-color-primary;
+            border-radius: 50%;
+        }
+        img {
             width: 100%;
             height: 100%;
             -o-object-fit: cover;
@@ -20,7 +30,7 @@ html {
             position: absolute;
             filter: brightness(45%);
         }
-        .fragmento{
+        .fragmento {
             z-index: 1;
             gap: 80px;
             .title{
